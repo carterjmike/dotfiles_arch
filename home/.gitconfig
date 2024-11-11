@@ -1,0 +1,11 @@
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+[user]
+	name = Mike Carter
+	email = carterjmike@gmail.com
+[core]
+    	excludesFile = ~/.gitignore
+	editor = nvim
+[pull]
+	ff = only
+

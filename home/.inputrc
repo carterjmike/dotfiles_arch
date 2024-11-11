@@ -1,0 +1,33 @@
+#| ~/.inputrc ----
+
+##| colors
+set colored-stats On
+set visible-stats On
+set mark-symlinked-directories On
+set colored-completion-prefix On
+set menu-complete-display-prefix On
+
+##| completion settings
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set completion-display-width 0
+set completion-query-items 1000
+
+##| ^C no longer shows on C-c keypress
+set echo-control-characters off
+
+##| command history search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+##| move foreward/backward by word
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
+
+##| bash keybindings
+"\C-f":"cd /home/mjc/.config/"
+"\C-s":"cd /home/mjc/Documents/scripts/"
+"\C-b":"cd ..\n"
+"\C-h":"cd ~\n"
+"\es":"\C-asudo \C-e"
+

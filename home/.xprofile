@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# sourced at boot by ~/.xinitrc and most display managers
+export EDITOR=nvim
+export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$HOME/.local/bin:$PATH"
+export QT_QPA_PLATFORMTHEME='qt5ct'
+
+picom &
+#nm-applet &
+#pasystray &
+#nitrogen --restore &
+#xfce4-power-manager --daemon &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#xset dpms 600 900 1200
+xset r rate 350 60
+
